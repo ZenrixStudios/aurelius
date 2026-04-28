@@ -1,0 +1,37 @@
+# ── SECRETS (never commit these) ──────────────
+.env
+*.key
+*.pem
+secrets/
+
+# ── CHROMADB VECTOR STORE ─────────────────────
+aurelius_memory/
+chroma/
+*.sqlite3
+
+# ── PYTHON ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+env/
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# ── LOGS ──────────────────────────────────────
+*.log
+logs/
+
+# ── OS JUNK ───────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo

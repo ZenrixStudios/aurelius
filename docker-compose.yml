@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  aurelius:
+    build: .
+    container_name: aurelius
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    volumes:
+      # Persist ChromaDB vector store and logs across restarts
+      - aurelius_memory:/data/aurelius_memory
+      - ./aurelius.log:/app/aurelius.log
+    environment:
+      - CHROMA_DB_PATH=/data/aurelius_memory
+
+volumes:
+  aurelius_memory:

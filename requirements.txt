@@ -1,0 +1,22 @@
+# Aurelius — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core
+feedparser==6.0.11
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+
+# Gemini
+google-generativeai==0.7.2
+
+# Vector Memory
+chromadb==0.5.0
+
+# Dashboard
+flask==3.0.3
+
+# Scheduler
+schedule==1.2.2
+
+# Email is stdlib (smtplib) — no install needed
